@@ -23,11 +23,11 @@ public class BrowserFactory {
                     break;
                 case "edge":
                 	  WebDriverManager.edgedriver().setup();
-                	    EdgeOptions options = new EdgeOptions();
-                	    options.addArguments("--remote-allow-origins=*");
-                	    options.addArguments("--no-sandbox");
-                	    options.addArguments("--disable-dev-shm-usage");
-                	    driver = new EdgeDriver(options);
+                	  EdgeOptions edgeOptions = new EdgeOptions();
+                      edgeOptions.addArguments("--headless=new");
+                      edgeOptions.addArguments("--disable-gpu");
+                      edgeOptions.addArguments("--window-size=1920,1080");
+                      driver = new EdgeDriver(edgeOptions);
                 	    break;
                     //WebDriverManager.edgedriver().setup();
                    // driver = new EdgeDriver();
