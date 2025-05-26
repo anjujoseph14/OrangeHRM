@@ -3,6 +3,7 @@
   <groupId>com.anju.orangehrm</groupId>
   <artifactId>orangehrm-automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
   <dependencies>
     <!-- Selenium WebDriver -->
     <dependency>
@@ -39,6 +40,16 @@
                     <target>17</target>
                 </configuration>
             </plugin>
+            
+            <!--Configure Maven WAR plugin to skip-->
+            <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-war-plugin</artifactId>
+  <version>3.4.0</version>
+  <configuration>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+  </configuration>
+</plugin>
 
             <!-- Maven Surefire Plugin for TestNG/JUnit test execution -->
             <plugin>
