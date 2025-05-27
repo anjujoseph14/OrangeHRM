@@ -1,14 +1,15 @@
-package com.OrangeHRM.tests;
+package com.OrangeHRM;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.OrangeHRM.LoginPage;
 import com.OrangeHRM.Utilities.BrowserFactory;
 import com.OrangeHRM.Utilities.ConfigReader;
-import com.OrangeHRM.pages.LoginPage;
+
 import java.time.Duration;
-public class OrangeHRMLoginTest {
+public class LoginTest {
 	WebDriver driver;
 	LoginPage loginPage;
 

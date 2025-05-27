@@ -1,4 +1,4 @@
-package com.OrangeHRM.pages;
+package com.OrangeHRM;
 
 public class EmployeeList {
 
